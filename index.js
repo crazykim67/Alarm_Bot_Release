@@ -41,7 +41,7 @@ client.once('ready', () => {
 client.on('messageCreate', async (message) => {
     if (message.author.bot) return;
 
-    if (message.channel.name !== "🌀ㅣ모집방") return;
+    if (message.channel.name !== "📅ㅣ모집방") return;
 
     const fireDate = extractTime(message.content, message.createdAt);
     if (!fireDate || fireDate < new Date()) return;
